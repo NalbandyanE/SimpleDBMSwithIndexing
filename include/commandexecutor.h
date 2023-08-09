@@ -11,10 +11,10 @@ public:
 	void execute(const Command&);
 private:
 	Command command;
-    DBMS db;
+    	DBMS db;
 	Table table;
-    std::vector<std::string> splitValues(const std::string& values);
-    std::vector<std::string> splitCommand(const std::string& str, char delimiter);
+    	std::vector<std::string> splitValues(const std::string& values);
+    	std::vector<std::string> splitCommand(const std::string& str, char delimiter);
 };
 
 #endif // COMMANDEXECUTOR_H
