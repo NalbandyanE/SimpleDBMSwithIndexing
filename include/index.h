@@ -12,9 +12,9 @@ class Index {
 public:
 	Index(int);
 	void createIndex(const std::vector<Row>&, const std::string&);
-    void insert(const std::string&, const Row&);
-    void remove(const std::string&, const Row&);
-    std::vector<Row> search(const std::string&) const;
+    	void insert(const std::string&, const Row&);
+    	void remove(const std::string&, const Row&);
+    	std::vector<Row> search(const std::string&) const;
 private:
 	BTree<std::string> btree;
 	std::string indexedColumn;
