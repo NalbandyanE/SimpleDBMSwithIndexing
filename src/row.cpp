@@ -39,10 +39,10 @@ Field Row::getField(const std::string& name) const {
 
 void Row::setField(const std::string& field_name, const std::string& new_value) {
 	for (Field& field : fields) {
-        if (field.getName() == field_name) {
-            field.setValue(new_value);
-            return;
-        }
-    }
-    std::cout << "Error: Field '" << field_name << "' not found." << std::endl;
+        	if (field.getName() == field_name) {
+            		field.setValue(new_value);
+            		return;
+        	}
+    	}
+    	std::cout << "Error: Field '" << field_name << "' not found." << std::endl;
 }
