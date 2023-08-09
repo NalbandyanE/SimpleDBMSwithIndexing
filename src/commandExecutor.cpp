@@ -39,7 +39,7 @@ void CommandExecutor::execute(const Command& com) {
             std::cout << "Invalid 'CREATE TABLE' command. Please try again." << std::endl;
         }
     } else if (sql_command == "INSERT INTO") {
-        std::string table_name = args[0];
+            std::string table_name = args[0];
 	    std::string field_names_str = args[1];
 	    std::string field_values_str = args[2];
 	    field_names_str = field_names_str.substr(1, field_names_str.length() - 2);
