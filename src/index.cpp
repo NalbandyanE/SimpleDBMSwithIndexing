@@ -25,9 +25,9 @@ void Index::remove(const std::string& key, const Row& record) {
 
 std::vector<Row> Index::search(const std::string& key) const {
 	std::vector<Row> result;
-    auto range = keyToRowMap.equal_range(key);
-    for (auto it = range.first; it != range.second; ++it) {
-        result.push_back(it->second);
-    }
-    return result;
+    	auto range = keyToRowMap.equal_range(key);
+    	for (auto it = range.first; it != range.second; ++it) {
+        	result.push_back(it->second);
+    	}
+    	return result;
 }
