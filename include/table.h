@@ -23,11 +23,11 @@ public:
 	void show() const;
 	bool loadFromFile(const std::string&, Row&) const;
 	bool loadFromFile(const std::string&);
-    bool saveToFile(const std::string&, const Row&) const;
-    bool meetCondition(const Row&, const std::string&);
-    bool hasIndexOn(const std::string&) const;
-    Index& getIndex(const std::string&);
-    void createIndex(const std::string&, int);
+    	bool saveToFile(const std::string&, const Row&) const;
+    	bool meetCondition(const Row&, const std::string&);
+    	bool hasIndexOn(const std::string&) const;
+    	Index& getIndex(const std::string&);
+    	void createIndex(const std::string&, int);
 private:
 	std::vector<Row> rows;
 	std::string name;
